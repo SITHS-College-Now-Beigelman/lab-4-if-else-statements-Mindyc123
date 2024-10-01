@@ -1,0 +1,41 @@
+//Mindy Chen
+//Lab 4
+//10.1.24
+
+#include <iostream> 
+#include <string>
+
+using namespace std;
+
+
+int main()
+{
+    string fruit;
+    double sugar;
+    bool yes = true;
+
+ 
+    
+    while (yes == true)
+    {
+ 
+    cout << "What is the name of the fruit and the number of grams of sugar that one cup of this fruit contains." <<endl;
+    cin >> fruit >> sugar;
+
+    if (sugar < 10)
+        cout << fruit << " LOW SUGAR FRUIT" <<endl; 
+
+    else if ((sugar >= 10) && (sugar <= 14))
+        cout << fruit << " MEDIUM SUGAR FRUIT" <<endl; 
+
+    else 
+        cout << fruit << " HIGH SUGAR FRUIT" <<endl; 
+
+    cout << "Any other fruit? (true/false)" <<endl; 
+    cin >> yes;
+    
+    }   
+
+    return 0;
+
+}
